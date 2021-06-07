@@ -19,7 +19,7 @@ def call(args){
             }
             stage('artifact') {
                 steps {
-                    secho 'artifact'
+                    echo 'artifact'
                 }
             }
         }
