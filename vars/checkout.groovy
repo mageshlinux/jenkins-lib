@@ -1,12 +1,9 @@
 def call(String a){
-   pipeline {
-      agent any
-      stages {
-        stage('Even Stage') {
-          steps {
-            echo "The build number is even"
-          }
+ node {
+    stage('Example') {
+
+            echo 'I only execute on the master branch'
+         
         }
-      }
- }
+    }
 }   
