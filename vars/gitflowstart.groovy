@@ -4,8 +4,8 @@ pipeline{
     stages{
         stage("Env Build Number"){
             steps{
-                echo "The build number is ${env.BUILD_NUMBER}"
-                echo "You can also use \${BUILD_NUMBER} -> ${BUILD_NUMBER}"                                               
+                sh 'echo "The build number is ${env.BUILD_NUMBER}"'
+                sh 'echo "You can also use \${BUILD_NUMBER} -> ${BUILD_NUMBER}"'
             }
         }
     }
