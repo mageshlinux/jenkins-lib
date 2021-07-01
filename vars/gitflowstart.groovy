@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("Env Build Number"){
             steps{
-                println "$BUILD_NUMBER"
+            echo "current build number: ${currentBuild.number}"
                 
             }
         }
