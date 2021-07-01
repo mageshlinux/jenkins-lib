@@ -1,3 +1,4 @@
+def call(args){
 pipeline{
     agent any
    
@@ -9,4 +10,5 @@ pipeline{
             }
         }
     }
+  }
 }
