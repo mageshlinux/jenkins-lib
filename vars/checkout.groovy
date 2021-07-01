@@ -1,3 +1,3 @@
-def call(str a){
+def call(string a){
    echo a
 }
