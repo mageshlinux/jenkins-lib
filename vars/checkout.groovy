@@ -2,7 +2,7 @@ def call(String a){
  node {
     stage('Example') {
 
-            echo 'I only execute on the master branch'
+            git branch: 'dev', credentialsId: 'github-cred', url: 'https://github.com/mageshlinux/magesh-test.git'
          
         }
     }
