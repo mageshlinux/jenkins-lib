@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("Env Build Number"){
             steps{
-                println ${env.BUILD_NUMBER}
+                println "${env.BUILD_NUMBER}"
                 
             }
         }
